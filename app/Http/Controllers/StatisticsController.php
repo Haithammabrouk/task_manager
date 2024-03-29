@@ -11,7 +11,7 @@ class StatisticsController extends Controller
     public function index()
     {
 
-        UpdateStatistics::dispatch();
+        // UpdateStatistics::dispatch();
         
         $statistics = Statistics::paginate(10);
 
