@@ -1,5 +1,5 @@
 after downloading the project from this rep 
-use git clone https://github.com/Haithammabrouk/task_manager.git
+using git clone https://github.com/Haithammabrouk/task_manager.git
 
 after installing the project run 
 
