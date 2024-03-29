@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Task;
 use App\Models\User;
+use App\Jobs\UpdateStatistics;
 use Illuminate\Http\Request;
 
 class TaskController extends Controller
@@ -12,7 +13,7 @@ class TaskController extends Controller
 
     public function index()
     {
-        #viewing tasks
+        UpdateStatistics::dispatch();
         $tasks = Task::paginate(10);
 
         return view('tasks.index', compact('tasks'));
