@@ -15,6 +15,5 @@ after installing the project run
 
 -php artisan serve (to start the project)
 
-and in another tab run this to start the queue to excute the job
-
+-and in another tab run this to start the queue to excute the job
 php artisan queue:work   (to run the job for the statistics bouns)
